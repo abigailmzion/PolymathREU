@@ -1,0 +1,12 @@
+data <- seq(1:100)
+rearrange <- function(data){
+    for(i in 1:100){
+    if (i%%2==0){
+        temp = data[i-1]
+        data[i-1] = data[i]
+        data[i] = temp
+    }
+    }
+    return(data)
+}
+rearrange(data)
